@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "druLbdz4mh0=",
+  "dgSpecHash": "PkMfQdbeFiE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj",
+  "projectFilePath": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Instrutor\\.nuget\\packages\\googlegson\\2.13.1.1\\googlegson.2.13.1.1.nupkg.sha512",
     "C:\\Users\\Instrutor\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0\\microsoft.extensions.configuration.10.0.0.nupkg.sha512",
