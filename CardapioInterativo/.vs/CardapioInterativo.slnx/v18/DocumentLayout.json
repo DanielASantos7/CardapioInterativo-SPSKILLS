@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F86BA64-8F58-420D-8DEC-70C8BA01DBDD}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\users\\instrutor\\desktop\\treinamento\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F86BA64-8F58-420D-8DEC-70C8BA01DBDD}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\users\\instrutor\\desktop\\treinamento\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F86BA64-8F58-420D-8DEC-70C8BA01DBDD}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\users\\instrutor\\desktop\\treinamento\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F86BA64-8F58-420D-8DEC-70C8BA01DBDD}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\users\\instrutor\\desktop\\treinamento\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F86BA64-8F58-420D-8DEC-70C8BA01DBDD}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\users\\instrutor\\desktop\\treinamento\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9F86BA64-8F58-420D-8DEC-70C8BA01DBDD}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\users\\instrutor\\desktop\\treinamento\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\Models\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CardapioInterativo.API\\Models\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\users\\instrutor\\desktop\\treinamento\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "CardapioInterativo.API\\Controllers\\ApiController.cs",
               "ToolTip": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\Controllers\\ApiController.cs",
               "RelativeToolTip": "CardapioInterativo.API\\Controllers\\ApiController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA7wCEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwCEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-28T13:37:47.719Z",
               "EditorCaption": ""
