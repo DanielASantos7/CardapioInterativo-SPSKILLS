@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nSsqvxNVdUw=",
+  "dgSpecHash": "xcBd+FeL4As=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj",
+  "projectFilePath": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Instrutor\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Instrutor\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

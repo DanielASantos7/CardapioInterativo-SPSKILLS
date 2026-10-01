@@ -28995,11 +28995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj",
+      "projectUniqueName": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj",
       "projectName": "CardapioInteravito.MOBILE",
-      "projectPath": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj",
+      "projectPath": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj",
       "packagesPath": "C:\\Users\\Instrutor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\obj\\",
+      "outputPath": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

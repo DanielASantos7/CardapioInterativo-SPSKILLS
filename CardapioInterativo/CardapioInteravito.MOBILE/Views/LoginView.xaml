@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CardapioInteravito.MOBILE.Views.LoginView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LoginView"
+    NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+
+        <VerticalStackLayout Margin="30" Spacing="15">
+
+            <Label
+                x:Name="lblError"
+                IsVisible="False"
+                Text="Erro"
+                TextColor="Red" />
+
+            <Label
+                x:Name="lblOk"
+                IsVisible="False"
+                Text="Certo"
+                TextColor="Green" />
+
+            <VerticalStackLayout
+                x:Name="pnlLogin"
+                Padding="5"
+                IsVisible="True"
+                Spacing="15">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Margin="0,80,0,0"
+                    FontAttributes="Italic"
+                    FontSize="20"
+                    Text="Email" />
+                <Border
+                    Margin="10,0,10,0"
+                    Padding="10"
+                    StrokeShape="RoundRectangle 15"
+                    StrokeThickness="1">
+                    <Entry
+                        x:Name="txtEmail"
+                        Placeholder="exemplo@email.com"
+                        PlaceholderColor="LightSlateGray" />
+                </Border>
+                <Label
+                    FontAttributes="Italic"
+                    FontSize="20"
+                    Text="Senha" />
+                <Border
+                    Margin="10,0,10,0"
+                    Padding="10"
+                    StrokeShape="RoundRectangle 15"
+                    StrokeThickness="1">
+                    <Entry
+                        x:Name="txtSenha"
+                        IsPassword="True"
+                        Placeholder="digite sua senha aqui"
+                        PlaceholderColor="LightSlateGray" />
+                </Border>
+
+                <Button
+                    x:Name="btnLogin"
+                    Margin="40"
+                    BackgroundColor="Purple"
+                    Clicked="btnLogin_Clicked"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    HeightRequest="55"
+                    Text="Login"
+                    TextColor="White"
+                    WidthRequest="200" />
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout x:Name="pnlPin" IsVisible="False">
+                <Label Text="Abaixo está o seu pin de acesso" TextColor="Black" />
+                <Label
+                    x:Name="pinGerado"
+                    Text="PIN"
+                    TextColor="Black" />
+                <Label Text="Confirme o pin" TextColor="Black" />
+                <Entry
+                    x:Name="txtPin"
+                    Keyboard="Numeric"
+                    Placeholder="Digite aqui o pin acima"
+                    PlaceholderColor="LightSlateGray" />
+                <Button
+                    x:Name="btnConfirmarPin"
+                    Margin="40"
+                    BackgroundColor="Purple"
+                    Clicked="btnConfirmarPin_Clicked"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    HeightRequest="55"
+                    Text="Confirmar Pin"
+                    TextColor="White"
+                    WidthRequest="200" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

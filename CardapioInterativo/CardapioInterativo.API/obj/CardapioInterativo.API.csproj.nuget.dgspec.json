@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj": {}
+    "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj": {
+    "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj",
+        "projectUniqueName": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj",
         "projectName": "CardapioInterativo.API",
-        "projectPath": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj",
+        "projectPath": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\CardapioInterativo.API.csproj",
         "packagesPath": "C:\\Users\\Instrutor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Instrutor\\Desktop\\Treinamento\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\obj\\",
+        "outputPath": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
