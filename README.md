@@ -19,7 +19,7 @@ Projeto desenvolvido para a competição SPSKILLS na modalidade Desenvolvimento 
 
 ## Funcionalidades Implementadas
 
-- **Tela Splash:** Temporizador de 9 segundos com transição dinâmica de cores oficiais e exibição aleatória de imagens sem repetição.
+- **Tela Splash:** Temporizador de 12 segundos com transição dinâmica de cores oficiais sem repetição.
 - **Sistema de Autenticação:** Validação de credenciais via API e controle de acesso baseado em perfis (Proprietário e Cliente).
 - **Gestão de Restaurantes:** Listagem alfabética, busca reativa a partir do 2º caractere, tratamento de fotos nulas, Soft Delete via clique longo e restauração de registros.
 - **Cardápio Interativo:** Mapeamento de pratos, definição de preços via modal (Proprietário), ordenação por categoria e persistência de curtidas (Cliente).
