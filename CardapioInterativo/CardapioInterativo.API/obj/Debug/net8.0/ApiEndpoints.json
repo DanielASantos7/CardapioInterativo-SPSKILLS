@@ -14,5 +14,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CardapioInterativo.API.Controllers.ApiController",
+    "Method": "GetRestaurantes",
+    "RelativePath": "api/restaurante/todosRestaurantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "perfilId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "busca",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

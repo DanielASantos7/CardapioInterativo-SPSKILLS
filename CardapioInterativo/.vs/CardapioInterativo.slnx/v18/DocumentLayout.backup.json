@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointeravito.mobile\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|solutionrelative:cardapiointeravito.mobile\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointeravito.mobile\\views\\splashscreenview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|solutionrelative:cardapiointeravito.mobile\\views\\splashscreenview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointeravito.mobile\\views\\splashscreenview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|solutionrelative:cardapiointeravito.mobile\\views\\splashscreenview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointeravito.mobile\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|solutionrelative:cardapiointeravito.mobile\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointeravito.mobile\\views\\loginview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|solutionrelative:cardapiointeravito.mobile\\views\\loginview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointeravito.mobile\\service\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A45F924-8B0E-3FED-C5C9-192C6DF2714F}|CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj|solutionrelative:cardapiointeravito.mobile\\service\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|c:\\provassuzano\\sessao2\\cardapiointerativo\\cardapiointerativo.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30C7BBE8-7875-9885-A3C4-AC806500DC09}|CardapioInterativo.API\\CardapioInterativo.API.csproj|solutionrelative:cardapiointerativo.api\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,92 +26,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SplashScreenView.xaml.cs",
-              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml.cs",
-              "RelativeDocumentMoniker": "CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml.cs",
-              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml.cs",
-              "RelativeToolTip": "CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T16:50:47.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "CardapioInteravito.MOBILE\\Views\\LoginView.xaml.cs",
-              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\LoginView.xaml.cs",
-              "RelativeToolTip": "CardapioInteravito.MOBILE\\Views\\LoginView.xaml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAUwDMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T13:20:38.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginView.xaml",
-              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\LoginView.xaml",
-              "RelativeDocumentMoniker": "CardapioInteravito.MOBILE\\Views\\LoginView.xaml",
-              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\LoginView.xaml",
-              "RelativeToolTip": "CardapioInteravito.MOBILE\\Views\\LoginView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-01T13:20:20.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\App.xaml.cs",
-              "RelativeDocumentMoniker": "CardapioInteravito.MOBILE\\App.xaml.cs",
-              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\App.xaml.cs",
-              "RelativeToolTip": "CardapioInteravito.MOBILE\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "CardapioInterativo.API\\Controllers\\ApiController.cs",
+              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "CardapioInterativo.API\\Controllers\\ApiController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowEEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T13:15:04.28Z",
+              "WhenOpened": "2026-10-01T18:57:03.464Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SplashScreenView.xaml",
-              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml",
-              "RelativeDocumentMoniker": "CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml",
-              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml",
-              "RelativeToolTip": "CardapioInteravito.MOBILE\\Views\\SplashScreenView.xaml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-01T16:41:05.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Service\\ApiService.cs",
-              "RelativeDocumentMoniker": "CardapioInteravito.MOBILE\\Service\\ApiService.cs",
-              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInteravito.MOBILE\\Service\\ApiService.cs",
-              "RelativeToolTip": "CardapioInteravito.MOBILE\\Service\\ApiService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAcwBcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T14:11:30.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CardapioInterativo.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\ProvasSuzano\\sessao2\\CardapioInterativo\\CardapioInterativo.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CardapioInterativo.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-01T14:17:45.631Z"
             }
           ]
         }
