@@ -17,6 +17,91 @@
   },
   {
     "ContainingType": "CardapioInterativo.API.Controllers.ApiController",
+    "Method": "AdicionarPrato",
+    "RelativePath": "api/cardapio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CardapioInterativo.API.Controllers.CardapioRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CardapioInterativo.API.Controllers.ApiController",
+    "Method": "GetCardapio",
+    "RelativePath": "api/cardapio/{restauranteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restauranteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CardapioInterativo.API.Controllers.ApiController",
+    "Method": "RemoverPrato",
+    "RelativePath": "api/cardapio/{restauranteId}/{pratoId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restauranteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pratoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CardapioInterativo.API.Controllers.ApiController",
+    "Method": "SoftDeleteRestaurante",
+    "RelativePath": "api/restaurante/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CardapioInterativo.API.Controllers.ApiController",
+    "Method": "RestaurarRestaurante",
+    "RelativePath": "api/restaurante/restaurar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CardapioInterativo.API.Controllers.ApiController",
     "Method": "GetRestaurantes",
     "RelativePath": "api/restaurante/todosRestaurantes",
     "HttpMethod": "GET",

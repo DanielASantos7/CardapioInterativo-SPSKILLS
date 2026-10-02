@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="CardapioInteravito.MOBILE.Views.MontarCardapioView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Montar Cardápio"
+    Shell.NavBarIsVisible="false">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="OnVoltarClicked" Text="Voltar" />
+    </ContentPage.ToolbarItems>
+
+    <Grid
+        Padding="15"
+        RowDefinitions="Auto,Auto,*"
+        RowSpacing="15">
+
+        <!--  PRATOS DISPONÍVEIS  -->
+
+        <VerticalStackLayout Grid.Row="0" Spacing="8">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Pratos Disponíveis" />
+
+            <Border
+                Padding="8"
+                Stroke="LightGray"
+                StrokeShape="RoundRectangle 10"
+                StrokeThickness="1">
+
+                <CollectionView
+                    x:Name="cvPratosDisponiveis"
+                    HeightRequest="130"
+                    ItemsLayout="HorizontalList"
+                    SelectionMode="None">
+
+                    <CollectionView.ItemTemplate>
+
+                        <DataTemplate>
+
+                            <Border
+                                Margin="4"
+                                HeightRequest="110"
+                                Stroke="LightGray"
+                                StrokeShape="RoundRectangle 10"
+                                WidthRequest="90">
+
+                                <Border.GestureRecognizers>
+
+                                    <DragGestureRecognizer CanDrag="True" DragStarting="PratoDisponivel_DragStarting" />
+
+                                </Border.GestureRecognizers>
+
+                                <Image Aspect="AspectFill" Source="{Binding Foto}" />
+
+                            </Border>
+
+                        </DataTemplate>
+
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+
+        <!--  MENU RESTAURANTE  -->
+
+        <VerticalStackLayout Grid.Row="1" Spacing="8">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Menu Restaurante" />
+
+            <Border
+                Padding="8"
+                Stroke="LightGray"
+                StrokeShape="RoundRectangle 10"
+                StrokeThickness="1">
+
+                <Border.GestureRecognizers>
+
+                    <DropGestureRecognizer AllowDrop="True" Drop="Menu_Drop" />
+
+                </Border.GestureRecognizers>
+
+                <CollectionView
+                    x:Name="cvMenuRestaurante"
+                    HeightRequest="130"
+                    ItemsLayout="HorizontalList"
+                    SelectionMode="None">
+
+                    <CollectionView.ItemTemplate>
+
+                        <DataTemplate>
+
+                            <Border
+                                Margin="4"
+                                HeightRequest="110"
+                                Stroke="LightGray"
+                                StrokeShape="RoundRectangle 10"
+                                WidthRequest="90">
+
+                                <Border.GestureRecognizers>
+
+                                    <DragGestureRecognizer CanDrag="True" DragStarting="PratoMenu_DragStarting" />
+
+                                </Border.GestureRecognizers>
+
+                                <Image Aspect="AspectFill" Source="{Binding Foto}" />
+
+                            </Border>
+
+                        </DataTemplate>
+
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+
+        <!--  LIXEIRA  -->
+
+        <VerticalStackLayout
+            Grid.Row="2"
+            HorizontalOptions="Center"
+            Spacing="6"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="13"
+                HorizontalOptions="Center"
+                Text="Arraste para remover" />
+
+            <Border
+                Padding="10"
+                HeightRequest="75"
+                Stroke="LightGray"
+                StrokeShape="RoundRectangle 15"
+                StrokeThickness="1"
+                WidthRequest="75">
+
+                <Border.GestureRecognizers>
+
+                    <DropGestureRecognizer AllowDrop="True" Drop="Lixeira_Drop" />
+
+                </Border.GestureRecognizers>
+
+                <Image Aspect="AspectFit" Source="lixeirablack.png" />
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Simultaneos",
+    "Projects": [
+      {
+        "Path": "CardapioInterativo.API\\CardapioInterativo.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "CardapioInteravito.MOBILE\\CardapioInteravito.MOBILE.csproj",
+        "Action": "Start",
+        "DebugTarget": "Xiaomi 23073RPBFL (Android 15.0 – API 35)"
+      }
+    ]
+  }
+]

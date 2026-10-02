@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardapioInterativo.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9481f6ed6dc6904dafaadbd8e2d2c08783acf94e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f82d0764dbb2c6cae3c52655f52ff3ad4d1b8ae2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardapioInterativo.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardapioInterativo.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

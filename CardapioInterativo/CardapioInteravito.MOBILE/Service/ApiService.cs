@@ -1,5 +1,7 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
+using System.Text;
+using System.Text.Json;
 
 namespace CardapioInteravito.MOBILE.Service
 {
@@ -13,6 +15,12 @@ namespace CardapioInteravito.MOBILE.Service
         {
             BaseAddress = new Uri("http://10.106.130.96:5000/api/"),
             Timeout = TimeSpan.FromSeconds(10)
+        };
+
+
+        private static readonly JsonSerializerOptions _jsonOption = new JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true,
         };
 
         // Essa string vai ser para exibir os possíveis erros que nossa aplicação pode gerar
@@ -50,6 +58,106 @@ namespace CardapioInteravito.MOBILE.Service
             {
                 Erro = $"Falha de Conexão: {ex.Message}";
                 return default;
+            }
+        }
+
+        /// <summary>
+        /// Esse é o Get genérico
+        /// </summary>
+        /// <typeparam name="T">Um tipo de resposta genérica</typeparam>
+        /// <param name="endpoint"> rota para fazermos o get </param>
+        /// <returns>retorna o conteúdo que a rota retornar ou erro </returns>
+        public static async Task<T?> GetAsync<T>(string endpoint)
+        {
+            Erro = string.Empty;
+
+            try
+            {
+                HttpResponseMessage response = await Http.GetAsync(endpoint);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string json = await response.Content.ReadAsStringAsync();
+
+                    return JsonSerializer.Deserialize<T>(json, _jsonOption);
+                }
+
+                Erro = response.StatusCode switch
+                {
+                    HttpStatusCode.Unauthorized => "Credenciais inválidas.",
+                    HttpStatusCode.BadRequest => "Dados preenchidos incorretamente",
+                    HttpStatusCode.NotFound => "Endereço não encontrado na API",
+                    _ => $"Erro no servidor (Código: {(int)response.StatusCode})"
+                };
+                return default;
+            }
+            catch (Exception ex)
+            {
+                Erro = $"Falha de Conexão: {ex.Message}";
+                return default;
+            }
+        }
+
+        public static async Task<bool> DeleteAsync(string endpoint)
+        {
+            Erro = string.Empty;
+
+            try
+            {
+                HttpResponseMessage response = await Http.DeleteAsync(endpoint);
+
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string json = await response.Content.ReadAsStringAsync();
+
+                    return JsonSerializer.Deserialize<bool>(json, _jsonOption);
+                }
+
+                Erro = response.StatusCode switch
+                {
+                    HttpStatusCode.Unauthorized => "Credenciais inválidas.",
+                    HttpStatusCode.BadRequest => "Dados preenchidos incorretamente",
+                    HttpStatusCode.NotFound => "Endereço não encontrado na API",
+                    _ => $"Erro no servidor (Código: {(int)response.StatusCode})"
+                };
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Erro = $"Falha de Conexão: {ex.Message}";
+                return false;
+            }
+        }
+
+        public static async Task<bool> PutAsync<T>(string endpoint, T dados)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(dados);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await Http.PutAsync(endpoint, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Erro = string.Empty;
+                    return true;
+                }
+
+                Erro = response.StatusCode switch
+                {
+                    HttpStatusCode.Unauthorized => "Credenciais inválidas.",
+                    HttpStatusCode.BadRequest => "Dados preenchidos incorretamente",
+                    HttpStatusCode.NotFound => "Endereço não encontrado na API",
+                    _ => $"Erro no servidor (Código: {(int)response.StatusCode})"
+                };
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Erro = ex.Message;
+                return false;
             }
         }
     }

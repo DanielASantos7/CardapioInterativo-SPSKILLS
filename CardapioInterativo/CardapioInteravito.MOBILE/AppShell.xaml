@@ -4,11 +4,12 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CardapioInteravito.MOBILE"
+    xmlns:views="clr-namespace:CardapioInteravito.MOBILE.Views"
     Title="CardapioInteravito.MOBILE">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginView}"
+        Route="LoginView" />
 
 </Shell>

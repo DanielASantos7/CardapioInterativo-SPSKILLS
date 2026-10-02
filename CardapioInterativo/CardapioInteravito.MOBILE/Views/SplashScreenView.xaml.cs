@@ -38,6 +38,9 @@ public partial class SplashScreenView : ContentPage
             }
         }
 
-        Application.Current.MainPage = new NavigationPage(new LoginView());
+        MainThread.BeginInvokeOnMainThread(async () =>
+        {
+            Application.Current!.MainPage = new AppShell();
+        });
     }
 }

@@ -66,12 +66,32 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\estrela.png" />
+	  <MauiImage Remove="Resources\Images\estrelaBlack.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\RestaurantesView.xaml.cs">
+	    <DependentUpon>RestaurantesView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\LoginView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MontarCadarpioView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RestaurantesView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RestaurantesView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SplashScreenView.xaml">

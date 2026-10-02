@@ -72,10 +72,160 @@
           }
         }
       }
+    },
+    "/api/restaurante/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Api"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/restaurante/restaurar/{id}": {
+      "put": {
+        "tags": [
+          "Api"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/cardapio/{restauranteId}": {
+      "get": {
+        "tags": [
+          "Api"
+        ],
+        "parameters": [
+          {
+            "name": "restauranteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/cardapio": {
+      "post": {
+        "tags": [
+          "Api"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardapioRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardapioRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardapioRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/cardapio/{restauranteId}/{pratoId}": {
+      "delete": {
+        "tags": [
+          "Api"
+        ],
+        "parameters": [
+          {
+            "name": "restauranteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pratoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "CardapioRequestDto": {
+        "type": "object",
+        "properties": {
+          "restauranteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pratoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valor": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDto": {
         "type": "object",
         "properties": {

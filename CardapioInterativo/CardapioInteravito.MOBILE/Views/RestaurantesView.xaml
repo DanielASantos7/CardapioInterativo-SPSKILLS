@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CardapioInteravito.MOBILE.Views.RestaurantesView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:CardapioInteravito.MOBILE.Views"
+    Title="RestaurantesView"
+    Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto, Auto, *">
+
+        <!--  1. TABS DE NAVEGACAO  -->
+        <HorizontalStackLayout
+            Grid.Row="0"
+            Margin="0,26,0,10"
+            HorizontalOptions="Center"
+            Spacing="30">
+
+            <VerticalStackLayout>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="22"
+                    Text="Restaurantes"
+                    TextColor="Black" />
+
+                <BoxView
+                    Margin="0,2,0,0"
+                    HeightRequest="2"
+                    Color="Black" />
+            </VerticalStackLayout>
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                Text="Pratos"
+                TextColor="Gray">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TabPratos_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                Text="Ranking"
+                TextColor="Gray" />
+        </HorizontalStackLayout>
+
+        <!--  2. BUSCA  -->
+        <SearchBar
+            x:Name="txtPesquisa"
+            Grid.Row="1"
+            Margin="10,0,10,10"
+            FontSize="16"
+            Placeholder="Pesquisa" />
+
+        <!--  3. LISTA DE RESTAURANTES  -->
+        <CollectionView
+            x:Name="cvRestaurantes"
+            Grid.Row="2"
+            Margin="10,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="views:RestauranteResponseDTO">
+
+                    <!--  SWIPEVIEW ATIVO (SEM IsEnabled NO PAI)  -->
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Reveal">
+                                <!--  O IsEnabled FICA APENAS NO ITEM DE DELETAR  -->
+                                <SwipeItem
+                                    BackgroundColor="#DC3545"
+                                    Invoked="SwipeItem_Invoked"
+                                    IsEnabled="{Binding PodeArrastar}"
+                                    Text="Excluir" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+
+                        <!--  CARD COM OPACIDADE DINAMICA  -->
+                        <Border
+                            Margin="0,0,0,15"
+                            Padding="0"
+                            Opacity="{Binding OpacidadeCard}"
+                            Stroke="#CCCCCC"
+                            StrokeShape="RoundRectangle 8">
+
+                            <Grid RowDefinitions="150, Auto, Auto, Auto, Auto">
+
+                                <!--  CONTAINER DA IMAGEM + OVERLAY  -->
+                                <Grid Grid.Row="0">
+                                    <Image
+                                        Aspect="AspectFill"
+                                        HeightRequest="150"
+                                        Source="{Binding ImageLocal}" />
+
+                                    <Grid BackgroundColor="#80000000" IsVisible="{Binding MostrarOverlayInativo}">
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="48"
+                                            HorizontalOptions="Center"
+                                            Text="X"
+                                            TextColor="White"
+                                            VerticalOptions="Center" />
+                                    </Grid>
+                                </Grid>
+
+                                <!--  NOME E ESTRELAS  -->
+                                <Grid
+                                    Grid.Row="1"
+                                    Padding="10,8,10,0"
+                                    ColumnDefinitions="*, Auto">
+                                    <Label
+                                        Grid.Column="0"
+                                        FontAttributes="Bold"
+                                        FontSize="16"
+                                        Text="{Binding Nome}"
+                                        TextColor="Black"
+                                        VerticalOptions="Center" />
+
+                                    <HorizontalStackLayout
+                                        Grid.Column="1"
+                                        BindableLayout.ItemsSource="{Binding EstrelasImages}"
+                                        Spacing="2"
+                                        VerticalOptions="Center">
+                                        <BindableLayout.ItemTemplate>
+                                            <DataTemplate x:DataType="x:String">
+                                                <Image
+                                                    HeightRequest="18"
+                                                    Source="{Binding .}"
+                                                    WidthRequest="18" />
+                                            </DataTemplate>
+                                        </BindableLayout.ItemTemplate>
+                                    </HorizontalStackLayout>
+                                </Grid>
+
+                                <!--  DESCRICAO  -->
+                                <Label
+                                    Grid.Row="2"
+                                    Margin="10,4,10,0"
+                                    FontSize="13"
+                                    Text="{Binding Descricao}"
+                                    TextColor="#666666" />
+
+                                <!--  CIDADE / TIPO  -->
+                                <Label
+                                    Grid.Row="3"
+                                    Margin="10,4,10,8"
+                                    FontAttributes="Bold"
+                                    FontSize="12"
+                                    Text="{Binding CidadeTipo}"
+                                    TextColor="#333333" />
+
+                                <!--  BOTAO INFERIOR (AGORA TOTALMENTE CLICAVEL)  -->
+                                <Button
+                                    Grid.Row="4"
+                                    BackgroundColor="{Binding CorBotaoCardapio}"
+                                    Clicked="BtnAcaoPrincipal_Clicked"
+                                    CornerRadius="0"
+                                    HeightRequest="40"
+                                    Text="{Binding TextoBotaoCardapio}"
+                                    TextColor="White" />
+
+                            </Grid>
+                        </Border>
+                    </SwipeView>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

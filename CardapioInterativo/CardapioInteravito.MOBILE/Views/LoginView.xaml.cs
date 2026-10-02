@@ -1,3 +1,4 @@
+using CardapioInteravito.MOBILE.Helpers;
 using CardapioInteravito.MOBILE.Service;
 
 namespace CardapioInteravito.MOBILE.Views;
@@ -46,6 +47,12 @@ public partial class LoginView : ContentPage
 
         pinAleatorio = Random.Shared.Next(100, 10000);
 
+
+        SessaoUsuario.UsauarioId = response.IdUsuario;
+        SessaoUsuario.NomeUsuario = response.NomeUsuario;
+        SessaoUsuario.PerfilId = response.PerfilId;
+        SessaoUsuario.EmailUsuario = response.EmailUsuario;
+
         lblError.IsVisible = false;
         pnlPin.IsVisible = true;
         pnlLogin.IsVisible = false;
@@ -53,7 +60,7 @@ public partial class LoginView : ContentPage
         pinGerado.Text = pinAleatorio.ToString();
     }
 
-    private void btnConfirmarPin_Clicked(object sender, EventArgs e)
+    private async void btnConfirmarPin_Clicked(object sender, EventArgs e)
     {
         if (string.IsNullOrWhiteSpace(txtPin.Text))
         {
@@ -73,6 +80,8 @@ public partial class LoginView : ContentPage
         lblError.IsVisible = false;
         lblOk.IsVisible = true;
         lblOk.Text = "Pin confirmado com sucesso. Login efetuado. Você será redirecionado para a tela principal";
+        await Shell.Current.GoToAsync(nameof(RestaurantesView));
+
     }
     public record LoginRequestDto
     {
@@ -85,6 +94,7 @@ public partial class LoginView : ContentPage
         public string NomeUsuario { get; set; }
         public string CPF { get; set; }
         public int PerfilId { get; set; }
+        public string EmailUsuario { get; set; }
     }
 }
 
